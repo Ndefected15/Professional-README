@@ -91,23 +91,14 @@ const questions = [
   {
     type: "checkbox",
     name: "licensing",
-    message: "Choose a license for your project (Required)",
+    message: "Choose a license for your project, press ENTER to select NONE.",
     choices: [
       "Apache",
       "MIT",
       "Mozilla-Public",
       "GNU-General-Public",
       "Common-Development-and Distribution",
-      "None",
     ],
-    validate: (licensingInput) => {
-      if (licensingInput) {
-        return true;
-      } else {
-        console.log("Please enter a license for the project!");
-        return false;
-      }
-    },
   },
   {
     type: "input",

@@ -1,7 +1,13 @@
 # yee
 
   ## Licensing:
-  [![license](https://img.shields.io/badge/license-MIT,GNU-General-Public-blue)](https://shields.io)
+   
+  function renderLicenseBadge(data) {
+  //[![license](https://img.shields.io/badge/license-${data.licensing}-blue)](https://shields.io)
+  if (data.licensing == null) return "";
+}
+
+  
   
   ## Table of Contents 
   - [Description](#description)
@@ -15,20 +21,23 @@
   yee
   
   ## Installation:
-  yeee
+  yee
   
   ## Usage:
   yee
   
   ## License:
-  MIT,GNU-General-Public
+  
   
   ## Contribution:
-  yeee
+  yee
   
   ## Testing:
-  yeee
+  yee
   
   ## Additional Info:
   - Github: [ndefected15](https://github.com/ndefected15)
   - Project Link: 
+  
+  
+  
