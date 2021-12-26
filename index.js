@@ -98,10 +98,9 @@ const questions = [
       "Mozilla-Public",
       "GNU-General-Public",
       "Common-Development-and Distribution",
-      "None",
     ],
-    validate: (licensingInput) => {
-      if (licensingInput) {
+    validate: (nameInput) => {
+      if (nameInput) {
         return true;
       } else {
         console.log("Please enter a license for the project!");
@@ -152,7 +151,11 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then(function (userInput) {
     console.log(userInput);
-    writeToFile("README.md", generateMarkdown(userInput));
+    writeToFile(
+      "README.md",
+      generateMarkdown(userInput),
+      renderLicenseBadge(userInput)
+    );
   });
 }
 

@@ -1,7 +1,7 @@
 # yee
 
   ## Licensing:
-  [![license](https://img.shields.io/badge/license-MIT,GNU-General-Public-blue)](https://shields.io)
+  undefined
   
   ## Table of Contents 
   - [Description](#description)
@@ -15,20 +15,20 @@
   yee
   
   ## Installation:
-  yeee
+  yee
   
   ## Usage:
   yee
   
   ## License:
-  MIT,GNU-General-Public
+  Apache
   
   ## Contribution:
-  yeee
+  yee
   
   ## Testing:
-  yeee
+  yee
   
   ## Additional Info:
-  - Github: [ndefected15](https://github.com/ndefected15)
+  - Github: [yee](https://github.com/yee)
   - Project Link: 
