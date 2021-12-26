@@ -1,17 +1,26 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(data) {
-  if (`${data.licensing[0]}`) {
-    return `[![license](https://img.shields.io/badge/license-${data.licensing[0]}-blue)](https://shields.io)`;
-  } else if (`${data.licensing[1]}`) {
-    return `[![license](https://img.shields.io/badge/license-${data.licensing[1]}-blue)](https://shields.io)`;
-  } else if (`${data.licensing[2]}`) {
-    return `[![license](https://img.shields.io/badge/license-${data.licensing[2]}-blue)](https://shields.io)`;
-  } else if (`${data.licensing[3]}`) {
-    return `[![license](https://img.shields.io/badge/license-${data.licensing[3]}-blue)](https://shields.io)`;
-  } else {
-    return " ";
-  }
+function renderLicenseBadge(license) {
+  console.log(license);
+  //for (var i = 0; i < license.length; i++) {}
+
+  var s = "";
+  license.forEach(function (item) {
+    s += `[![license](https://img.shields.io/badge/license-${item}-blue)](https://shields.io) `;
+    console.log(`s is now: ${s}`);
+  });
+  return s;
+  // if (`${license[0]}`) {
+  //   return `[![license](https://img.shields.io/badge/license-${license[0]}-blue)](https://shields.io)`;
+  // } else if (`${license[1]}`) {
+  //   return `[![license](https://img.shields.io/badge/license-${license[1]}-blue)](https://shields.io)`;
+  // } else if (`${license[2]}`) {
+  //   return `[![license](https://img.shields.io/badge/license-${license[2]}-blue)](https://shields.io)`;
+  // } else if (`${license[3]}`) {
+  //   return `[![license](https://img.shields.io/badge/license-${license[3]}-blue)](https://shields.io)`;
+  // } else {
+  //   return " ";
+  // }
 }
 
 // TODO: Create a function that returns the license link
@@ -27,7 +36,7 @@ function generateMarkdown(data) {
   return `# ${data.name}
 
   ## Licensing:
-  ${renderLicenseBadge()}
+  ${renderLicenseBadge(data.licensing)}
   
   ## Table of Contents 
   - [Description](#description)
@@ -47,7 +56,7 @@ function generateMarkdown(data) {
   ${data.usage}
   
   ## License:
-  ${data.licensing}
+  ${data.licensing}\n
   
   ## Contribution:
   ${data.contribute}
@@ -57,7 +66,10 @@ function generateMarkdown(data) {
   
   ## Additional Info:
   - Github: [${data.github}](https://github.com/${data.github})
-  - Project Link: `;
+  - email: ${data.email}
+
+    Send me an Email for more questions about this project!
+  `;
 }
 
 module.exports = generateMarkdown;

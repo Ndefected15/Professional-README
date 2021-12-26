@@ -1,7 +1,7 @@
-# yee
+# Professional-README-Generator
 
   ## Licensing:
-  undefined
+  [![license](https://img.shields.io/badge/license-Apache-blue)](https://shields.io) [![license](https://img.shields.io/badge/license-MIT-blue)](https://shields.io) [![license](https://img.shields.io/badge/license-MPL_2.0-blue)](https://shields.io) [![license](https://img.shields.io/badge/license-GPLv3-blue)](https://shields.io) 
   
   ## Table of Contents 
   - [Description](#description)
@@ -12,23 +12,27 @@
   - [Additional Info](#additional-info)
   
   ## Description:
-  yee
+  A command-line application that accepts user input to produce a high-quality, professional README.md
   
   ## Installation:
-  yee
+  Clone this repo, then ensure that you have node downloaded on your pc. Lastly, npm install inquirer
   
   ## Usage:
-  yee
+  Use this command-line application to quickly generate professional grade README files for any and all projects!
   
   ## License:
-  Apache
+  Apache,MIT,MPL_2.0,GPLv3
+
   
   ## Contribution:
-  yee
+  - built by Nicholas Defex
   
   ## Testing:
-  yee
+  To test the project, in the command line run "node index".
   
   ## Additional Info:
-  - Github: [yee](https://github.com/yee)
-  - Project Link: 
+  - Github: [Ndefected15](https://github.com/Ndefected15)
+  - email: ndefected@gmail.com
+
+    Send me an Email for more questions about this project!
+  

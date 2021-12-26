@@ -92,13 +92,7 @@ const questions = [
     type: "checkbox",
     name: "licensing",
     message: "Choose a license for your project (Required)",
-    choices: [
-      "Apache",
-      "MIT",
-      "Mozilla-Public",
-      "GNU-General-Public",
-      "Common-Development-and Distribution",
-    ],
+    choices: ["Apache", "MIT", "MPL_2.0", "GPLv3"],
     validate: (nameInput) => {
       if (nameInput) {
         return true;
@@ -123,13 +117,13 @@ const questions = [
   },
   {
     type: "input",
-    name: "link",
-    message: "Enter the GitHub link to your project. (Required)",
+    name: "email",
+    message: "Enter email address. (Required)",
     validate: (nameInput) => {
       if (nameInput) {
         return true;
       } else {
-        console.log("You need to enter a project GitHub link!");
+        console.log("You need to enter an email address!");
         return false;
       }
     },
@@ -151,11 +145,7 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then(function (userInput) {
     console.log(userInput);
-    writeToFile(
-      "README.md",
-      generateMarkdown(userInput),
-      renderLicenseBadge(userInput)
-    );
+    writeToFile("README.md", generateMarkdown(userInput));
   });
 }
 
