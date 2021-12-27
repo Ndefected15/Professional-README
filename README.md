@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Professional-README-Generator
 
 ## Licensing:
