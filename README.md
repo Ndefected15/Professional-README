@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Professional-README-Generator
 
 ## Licensing:
@@ -43,3 +44,48 @@ To test the project, in the command line run "node index".
 - email: ndefected@gmail.com
 
   Send me an Email for more questions about this project!
+=======
+# yee
+
+  ## Licensing:
+   
+  function renderLicenseBadge(data) {
+  //[![license](https://img.shields.io/badge/license-${data.licensing}-blue)](https://shields.io)
+  if (data.licensing == null) return "";
+}
+
+  
+  
+  ## Table of Contents 
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contribution](#contribution)
+  - [Testing](#testing)
+  - [Additional Info](#additional-info)
+  
+  ## Description:
+  yee
+  
+  ## Installation:
+  yee
+  
+  ## Usage:
+  yee
+  
+  ## License:
+  
+  
+  ## Contribution:
+  yee
+  
+  ## Testing:
+  yee
+  
+  ## Additional Info:
+  - Github: [ndefected15](https://github.com/ndefected15)
+  - Project Link: 
+  
+  
+  
+>>>>>>> a0c803fdfbeb3f4f8e82042e90552941494edc16

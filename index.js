@@ -91,6 +91,7 @@ const questions = [
   {
     type: "checkbox",
     name: "licensing",
+<<<<<<< HEAD
     message: "Choose a license for your project (Required)",
     choices: ["Apache", "MIT", "MPL_2.0", "GPLv3"],
     validate: (nameInput) => {
@@ -101,6 +102,16 @@ const questions = [
         return false;
       }
     },
+=======
+    message: "Choose a license for your project, press ENTER to select NONE.",
+    choices: [
+      "Apache",
+      "MIT",
+      "Mozilla-Public",
+      "GNU-General-Public",
+      "Common-Development-and Distribution",
+    ],
+>>>>>>> a0c803fdfbeb3f4f8e82042e90552941494edc16
   },
   {
     type: "input",
