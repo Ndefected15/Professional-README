@@ -37,7 +37,8 @@ Apache,MIT,MPL_2.0,GPLv3
 
 To test the project, in the command line run "node index".
 
-![alt text](https://github.com/Ndefected15/Professional-README/blob/main/utils/test.webm?raw=true)
+https://user-images.githubusercontent.com/92278942/147423468-51965d16-5d90-43d8-accc-d8fa026a7e01.mp4
+
 
 ## Additional Info:
 
